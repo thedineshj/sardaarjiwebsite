@@ -1,1 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+body {
+    margin: 0 auto;
+    font-family: 'Signika', sans-serif;
+    height: 5000px;
+}
 
+nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+nav.nav-logo {
+    text-align: center;
+}
+
+nav.nav-logo img {
+    width: 4em;
+    height: 4.5em;
+}
+
+nav.nav-bar {
+    padding-top: 0.2em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+a.title:link,
+a.title:hover,
+a.title:active,
+a.title:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a.title {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: black;
+}
+
+nav.fixed a.title {
+    float: left;
+    margin-left: 1em;
+    color: white;
+}
+
+nav span.icon-menu {
+    position: absolute;
+    right: 10px;
+    font-weight: bolder;
+}
+
+nav.fixed span.icon-menu {
+    color: white;
+}
