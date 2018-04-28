@@ -5,23 +5,79 @@
     <title>Sardaarji Restaurant</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-    <nav class="nav-cont">
-        <nav class="nav-logo">
-            <a href="#">
-                <img src="images/logo.png" alt="Sardaarji logo" />
-            </a>
-        </nav>
+    <header class="nav-bar">
+        <a href="#">
+            <img src="images/logo.png" alt="Sardaarji logo" />
+            <span>Sardaarji</span>
+        </a>
 
-        <nav class="nav-bar">
-            <a class="title" href="#">Sardaarji</a>
-            <span class="icon-menu">☰</span>
-        </nav>
-    </nav>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <span class="icon-menu">☰</span>
+    </header>
+
+    <section class="intro-container">
+        <div class="intro-content">
+            <span>Welcome</span>
+            <br />
+            <span>to</span>
+            <br />
+            <span class="title">Sardaarji</span>
+            <br />
+            <span style="font-size: small;">(Authentic Punjabi "Food on the Go")</span>
+            <br />
+
+            <div class="swiper-container testimonials-container">
+                <h>What our customers say</h>
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide testimonial">
+                        <blockquote>
+                            The food is worth tasting. The staff insures everything is up to the mark. The name is totally worth the hype.
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <blockquote>
+                            Amazing restaurant. Gets your taste buds buzzing. Highly recommended
+                        </blockquote>
+
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <blockquote>
+                            They have lots of variety with reasonable rates, remarkable quality and quantity.
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <blockquote>
+                            Speedy delivery and good taste. Seating arrangements are pretty cool.
+                        </blockquote>
+                    </div>
+
+                    <div class="swiper-slide testimonial">
+                        <blockquote>
+                            Always has to be my go to place. The food gives you 100% value of money.
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <blockquote>
+                            Authentic punjabi food , Delicious, Would love to visit this place again.
+                        </blockquote>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="intro-links">
+                <a href="#">Order food</a> <a href="#">Franchise</a>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
