@@ -10,3 +10,12 @@ var testimonialSwiper = new Swiper('.testimonials-container', {
         clickable: true,
     },
 });
+var branchesSwiper = new Swiper('.branches-swiper', {
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
