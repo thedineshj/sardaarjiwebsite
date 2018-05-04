@@ -19,3 +19,15 @@ var branchesSwiper = new Swiper('.branches-swiper', {
         prevEl: '.swiper-button-prev',
     }
 });
+
+var foodmenuSwiper = new Swiper('.foodmenu-swiper', {
+    loop: true,
+    speed: 1000,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+    }
+});
