@@ -137,7 +137,7 @@ div.intro-links a:visited {
 }
 
 section.branches-container {
-    margin: 0 auto 0 auto;
+    margin: 0 auto 2em auto;
     padding: 2em 0 2em 0;
     background-color: #a90303e8;
     text-align: center;
@@ -225,6 +225,117 @@ div.branches-swiper .swiper-slide div.branch-description a:visited,
 div.branches-swiper .swiper-slide div.branch-description a:active {
     color: green;
     text-decoration: none;
+}
+
+section.parallax {
+    margin: 0 auto 0 auto;
+    background: url("../images/parallax.jpg") center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+section.foodmenu-container {
+    margin: 4em auto 0 auto;
+    padding: 2em 0 2em 0;
+    text-align: center;
+}
+
+section.foodmenu-container h.foodmenu-title {
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: #a90303e8;
+    letter-spacing: 0.2em;
+    padding: 1em;
+}
+
+section.foodmenu-container div.foodmenu-swiper {
+    margin: 2em auto 2em auto;
+    width: 98%;
+}
+
+section.foodmenu-container div.swiper-slide {
+    padding: 1em 0 1em 0;
+    margin: 0 auto 0 auto;
+    background-color: #a90303e8;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+section.foodmenu-container div.tabcontent {
+    margin: 2em auto 2em auto;
+    width: 90%;
+    display: none;
+}
+
+div.tabcontent div.heading {
+    text-align: center;
+    padding: 1em;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.2em;
+}
+
+div.tabcontent div.innertab {
+    margin: 1em auto 0 auto;
+    display: flex;
+    width: 80%;
+}
+
+div.tabcontent div.innertablinks {
+    padding: 1em 0 1em 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 2px solid black;
+    transition: all 0.2s linear;
+}
+
+div.innertabcontent {
+    overflow-x: auto;
+}
+
+.active {
+    animation-name: activetab;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    background-color: black;
+    color: white;
+}
+
+@keyframes activetab {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+div.tabcontent table {
+    font-weight: bolder;
+    padding: 1em 0 1em 0;
+    width: 100%;
+    margin: 1em auto 1em auto;
+    text-align: center;
+    border: 0.4px solid black;
+}
+
+div.tabcontent table tr:nth-child(1) th {
+    padding: 1em;
+}
+
+div.tabcontent table tr td {
+    padding: 0.6em;
+}
+
+div.tabcontent table tr:nth-child(2n) td {
+    padding: 0.6em;
+    background-color: #f2f2f2;
 }
 
 @media only screen and (min-width: 1224px) {
